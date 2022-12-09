@@ -92,12 +92,12 @@ console.log(calcFinalPrice(50, 10, .1))
 */
 
 
-/*name - to know how to address your customer
-address - if there is a delivery
-phone number or email - to send promotions
-birthdate - for a birthday promotion or discount
-reward points - if there is a reward program
-customer id - unique number to identify customer */
+/*name - to know how to address your customer (string) its a word
+address - if there is a delivery (string) its a mixed data
+phone number or email - to send promotions (number for phone(only numbers), string for email(uses letters and symbols))
+birthdate - for a birthday promotion or discount (string, mixed data)
+reward points - if there is a reward program (number, uses only numbers)
+customer id - unique number to identify customer (number (uses only numbers)) */
 
 
 /*
