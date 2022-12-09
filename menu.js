@@ -164,18 +164,9 @@ foodArr = [
 
 //CODE HERE
 
-// const filteredArr = foodArr.filter(element =>{
-//     let arr = []
-//     for (i = 0; i < foodArr.length; i++) {
-//   if (foodArr[i].tags.includes(`deals`)) { 
-//     arr.push(foodArr[i])
-//   }
-//   }
-//   return arr
-//   })
+const filteredArr = foodArr.filter(element => element.tags.includes(`deals`))
 
-// console.log(filteredArr)
-
+console.log(filteredArr)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -218,13 +209,23 @@ foodArr = [
 
 //CODE HERE
 
+// const filterByProperty = foodArr.filter((property, number, type) => {
+//     if (type === `above`) {
+//         return foodArr.property > number
+//     }
+   
 
+// })
 
-/*
-    Invoke the `filterByProperty` function passing
-    in a value for each paramter.
+// console.log(filterByProperty(`rating`, 7, `above`))
 
-    You'll have to console.log to see the filtered array
-*/
+// /*
+//     Invoke the `filterByProperty` function passing
+//     in a value for each paramter.
 
-//CODE HERE
+//     You'll have to console.log to see the filtered array
+// */
+
+// //CODE HERE
+
+// console.log(filterByProperty(rating, >, 6))
