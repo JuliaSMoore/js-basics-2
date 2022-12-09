@@ -80,13 +80,12 @@ const canWeDeliver2 = (zipcode) => {
   for (i = 0; i < deliveryAreaZipCodes.length; i++) {
     if (zipcode === deliveryAreaZipCodes[i]) {
       return `You're in our delivery zone!`;
-    } else {
-      return `Sorry, we can't deliver there yet.`;
     }
   }
+  return `Sorry, we can't deliver there yet.`;
 };
 
-console.log(canWeDeliver2(85205));
+console.log(canWeDeliver2(85201));
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -123,9 +122,9 @@ const deals = [
 
 //CODE HERE
 
-dealsDiscount = deals[0].title.replace(15, 10);
+deals[0].title = deals[0].title.replace(15, 10);
 
-console.log(dealsDiscount);
+console.log(deals);
 
 /*
     The restaurant is going to continue its
@@ -142,6 +141,6 @@ console.log(dealsDiscount);
 
 //CODE HERE
 
-trimDeals = deals[1].desc.trim().replace(`March`, `April`);
+deals[1].desc = deals[1].desc.trim().replace(`March`, `April`);
 
-console.log(trimDeals);
+console.log(deals);

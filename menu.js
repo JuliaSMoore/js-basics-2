@@ -210,11 +210,14 @@ console.log(filteredArr);
 //CODE HERE
 
 let filterByProperty = (property, number, type) => {
-  if (type === `above`) {
-    return foodArr.filter((element) => element.property > number);
-  } else {
-    return foodArr.filter((element) => element.property < number);
-  }
+  let filteredArr = foodArr.filter((element) => {
+    if (type === `above`) {
+      return element[property] > number;
+    } else if (type === `below`) {
+      return element[property] < number;
+    }
+  });
+  return filteredArr;
 };
 
-console.log(filterByProperty(`rating`, 9, `above`));
+console.log(filterByProperty(`rating`, 7, `above`));
